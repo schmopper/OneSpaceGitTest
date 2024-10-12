@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Hover effect: light blue */
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+#home {
+    text-align: center;
+}
+
+#work, #bio, #achievements, #hobbies, #articles, #contact {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007BFF;
+    font-size: 28px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+.project h3 {
+    color: #333333;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
